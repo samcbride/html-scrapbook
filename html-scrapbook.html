@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table, th, td, tr {
-          border: 2px solid purple;
+      table, th, td, tr {
+        border: 2px solid purple;
         }
         </style>
 </head>
@@ -18,91 +18,92 @@
     </div>
    <h3>Vancouver, British Columbia</h3>
    <div>
-       <h4>A Brief Description and History</h4>
-       <p><span style="color:green">Vancouver</span> is located in British Columbia, the most westerly province in Canada. Vancouver is consistently named one of the top cities for liveability and quality of life, however it is also one of the most expensive cities and ranks as the <q>most expensive city to live in Canada and the fourth-most expensive globally.</q>
-       <br>
-       <br>
+       <h4>A Brief Description</h4>
+       <p><span style="color:green">Vancouver</span> is located in British Columbia, the most westerly province in Canada. Vancouver is consistently named one of the top cities for liveability and quality of life, however it is also one of the most expensive cities and ranks as the <q>most expensive city to live in Canada and the fourth-most expensive globally.</q></p>
     </div>
     <div>
        <h4>Ecology and Climate</h4>
-       Vancouver is one of Canada's warmest cities in winter and one of the coolest in summer compared to all other major metropolitan cities. Vancouver was a <q><em>temperate rain forest</em></q> due to its vegetation though many trees and plants that grow there today were imported from other areas. One of the most common is the Japanese cherry tree, which lines many streets throughout the city. They bloom in early spring each year and are celebrated by the <a href="https://en.wikipedia.org/wiki/Vancouver_Cherry_Blossom_Festival" target="_blank">Vancouver Cherry Blossom Festival.</a> 
-       <br>
-       <br>
+       <p>Vancouver is one of Canada's warmest cities in winter and one of the coolest in summer compared to all other major metropolitan cities. Vancouver was a <q><em>temperate rain forest</em></q> due to its vegetation though many trees and plants that grow there today were imported from other areas. One of the most common is the Japanese cherry tree, which lines many streets throughout the city. They bloom in early spring each year and are celebrated by the <a href="https://en.wikipedia.org/wiki/Vancouver_Cherry_Blossom_Festival" target="_blank">Vancouver Cherry Blossom Festival.</a></p>
+       <div>
+         <h5>Table of typical temperatures in Vancouver</h5>
+         <p>We can create a table using the <code>table</code> attribute.</p>
+         <table cellpadding=4 style="width:400px">
+           <tbody>
+            <tr>
+               <th>Season</th>
+               <th>Average Temperature</th>
+            </tr> 
+            <tr>
+                <td>Spring</td>
+                <td>15 degrees C</td>
+            </tr>
+            <tr>
+                <td>Summer</td>
+                <td>22 degrees C</td>
+            </tr>
+            <tr>
+                <td>Fall</td>
+                <td>15 degrees C</td>
+            </tr>
+            <tr>
+                <td>Winter</td>
+                <td>7 degrees C</td>
+            </tr>
+           </tbody>
+         </table>
+       </div>
     </div>
     <div>
        <h4>Things To Do</h4>
        <p>There are many activities to do in Vancouver, such as:
-           <ul>
-               <li>Kayaking</li>
-               <li>Hiking</li>
-               <li>Swimming</li>
-               <li>Skiing</li>
-           </ul>
+         <ul>
+           <li>Kayaking</li>
+           <li>Hiking</li>
+           <li>Swimming</li>
+           <li>Skiing</li>
+         </ul>
        </p>
     </div>
     <div>
        <h4>Things You Might Not Know</h4>
        <ol>
-           <li>Vancouver is often referred to colloquially as <span style="color: gold"><q>Hollywood North.</q></span></li>
-           <li>Vancouver has a Shakespear Festival every summer called <q><span style="color: red">Bard</span> on the <span style="color: red">Beach.</span></q></li>
-           <li>Vancouver's Chinatown is Canada's largest Chinatown.</li>
+         <li>Vancouver is often referred to colloquially as <span style="color: gold"><q>Hollywood North.</q></span></li>
+         <li>Vancouver has a Shakespear Festival every summer called <q><span style="color: red">Bard</span> on the <span style="color: red">Beach.</span></q></li>
+         <li>Vancouver's Chinatown is Canada's largest Chinatown.</li>
        </ol>
    </div>
    <div>
-       <h2>Now after going off on a tangent, let's get back to more HTML funness!</h2>
-       <h5>Let's create a table!</h5>
-       <p>We can create a table using the <code>table attribute</code></p>
-       <table cellpadding=4>
-           <thead>
-               <tr>
-                   <th colspan=2>I'm a table</th>
-               </tr>
-           </thead>
-           <tbody>
-            <tr>
-               <th>Cities</th>
-               <th>Countries</th>
-            </tr> 
-            <tr>
-                <td>Manchester</td>
-                <td>England</td>
-            </tr>
-            <tr>
-                <td>Paris</td>
-                <td>France</td>
-            </tr>
-           </tbody>
-       </table>
+      <h4>Types of Food to Eat in Vancouver</h4>
+      <p><strong><em>Radio button example:</em></strong><br><br>Which type of food would you like for dinner?</p>
+      <label for="japanese">
+        <input id="japanese" type="radio" name="food type">Japanese
+      </label>
+      <label for="thai">
+        <input id="thai" type="radio" name="food type">Thai
+      </label>
+      <label for="indian">
+        <input id="indian" type="radio" name="food type">Indian
+      </label>
+      <h3>Activities in the City Centre</h3>
+      <p><strong><em>Checkbox example:</em></strong><br><br>What would you like to do today?</p>
+      <label for="walk around Gastown">
+        <input id="walk around Gastown" type="checkbox" name="activity">Walk around Gastown
+      </label>
+      <label for="go shopping">
+        <input id="go shopping" type="checkbox" name="activity">Go shopping
+      </label>
+      <label for="rent a bike">
+        <input id="rent a bike" type="checkbox" name="activity">Rent a bike
+      </label>
    </div>
+   <h6>Would you like more information about Vancouver? Please complete the form below!</h6>
    <div>
-       <h3>Now let's create some buttons!</h3>
-       <p><strong><em>Radio button example:</em></strong> <br>Which type of food would you like?</p>
-       <label for="spaghetti">
-           <input id="spaghetti" type="radio" name="food type">Spaghetti
-       </label>
-       <label for="hamburger">
-           <input id="hamburger" type="radio" name="food type">Hamburger
-       </label>
-       <p><strong><em>Checkbox example:</em></strong> <br>What would you like to do today?</p>
-       <label for="watch tv">
-           <input id="watch tv" type="checkbox" name="activity">Watch TV
-       </label>
-       <label for="go for a walk">
-           <input id="go for a walk" type="checkbox" name="activity">Go for a walk
-       </label>
-       <label for="read a book">
-           <input id="read a book" type="checkbox" name="activity">Read a book
-       </label>
-   </div>
-   <br>
-   <h5>Now I think it's time to create a form!</h5>
-   <h6>Let's also add some more header's for fun and to see the size difference.</h6>
-   <form action="" method="post" class="test-form">
+     <form action="" method="post" class="test-form">
        <div class="test-form">
          <label for="name">Name:</label>
          <input id="name" type="text" name="user_name">
         </div> 
-        <div class="test=form">
+        <div class="test-form">
           <label for="mail">Email:</label>
           <input id="mail" type="email" name="user_email">
         </div>
@@ -113,7 +114,8 @@
         <div class="test-form">
            <input type="submit" value="Submit">
         </div>
-   </form>
+     </form>
+</div>
    <br>
   <footer>All information gathered from: <a href="https://en.wikipedia.org/wiki/Vancouver" target="_blank">Wikipedia Vancouver</a> and <a href="https://en.wikipedia.org/wiki/Hollywood_North#Vancouver" target="_blank">Hollywood North</a>
   </footer>
